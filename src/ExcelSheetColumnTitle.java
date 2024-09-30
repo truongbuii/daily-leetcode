@@ -9,7 +9,17 @@ public class ExcelSheetColumnTitle {
         return str.toString();
     }
 
+    public static int titleToNumber(String columnTitle) {
+        int n = columnTitle.length();
+        int result = (columnTitle.charAt(0) - 'A') + 1;
+        for (int i = 1; i < n; i++ ) {
+            result *= 26;
+            result += (columnTitle.charAt(i) - 'A') + 1;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
-        System.out.println(convertToTitle(701));
+        System.out.println(titleToNumber("ZY"));
     }
 }
