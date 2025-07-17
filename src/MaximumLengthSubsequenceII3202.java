@@ -23,6 +23,6 @@ public class MaximumLengthSubsequenceII3202 {
     }
 
     public static void main(String[] args) {
-        System.out.println(maximumLength(new int[]{1, 2, 3, 4, 5}, 2)); // Example usage
+        System.out.println(maximumLength(new int[]{1,4,2,3,1,4}, 3)); // Example usage
     }
 }
